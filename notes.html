@@ -3,21 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Study Notes</title>
+  <title>Study Notes | youkosodayo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Study Notes</h1>
-  <p><a href="./">Homeに戻る</a></p>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="title">Study Notes</div>
+        <div class="subtitle">分野ごとのまとめ</div>
+      </div>
+      <nav class="nav">
+        <a class="chip" href="./">Home</a>
+        <a class="chip" href="notes.html">Notes</a>
+        <a class="chip" href="problems.html">Problems</a>
+      </nav>
+    </header>
 
-  <h2>熱力学</h2>
-  <ul>
-    <li>ギブス自由エネルギーと自発変化</li>
-    <li>エンタルピーの全微分</li>
-  </ul>
+    <h1 class="page-title">Study Notes</h1>
+    <p class="small">各トピックは「定義→意味→導出→例題」を意識して増やしていきます。</p>
 
-  <h2>量子力学</h2>
-  <ul>
-    <li>波束と不確定性関係</li>
-  </ul>
+    <div class="grid">
+      <section class="card">
+        <h2>熱力学</h2>
+        <p>自由エネルギー、相変化、全微分など。</p>
+        <ul>
+          <li>ギブス自由エネルギーと自発変化</li>
+          <li>エンタルピーの全微分</li>
+          <li>融解エントロピーの計算</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>量子力学</h2>
+        <p>波束、期待値、演算子、測定。</p>
+        <ul>
+          <li>波束と不確定性関係</li>
+          <li>交換関係と分散</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>統計・データ解析</h2>
+        <p>分散、推定、回帰、信頼区間。</p>
+        <ul>
+          <li>標本平均の分散（定義から）</li>
+          <li>単回帰の途中式確認</li>
+          <li>丸めルール（信頼限界）</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>数学</h2>
+        <p>フーリエ級数・積分、線形代数など。</p>
+        <ul>
+          <li>フーリエ級数：直交性→係数</li>
+          <li>フーリエ変換：物理的意味</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <span><a href="./">← Home</a></span>
+      <span>Last update: 2026-02-16</span>
+    </footer>
+  </div>
 </body>
 </html>
